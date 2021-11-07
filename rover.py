@@ -2,7 +2,7 @@
 """
 Created on Mon Oct  8 23:54:48 2018
 Simpel demo for controlling rover.
-The demo is using PWM output and is controlled with the following key:
+The demo is using PWM output to the motors and is controlled with the following key:
 a - decrease output to left motor by 10%
 s - increasing output to left motor by 10 %
 d - increasing output to right motor by 10 %
@@ -52,7 +52,7 @@ def leftmotor(lspeed):
         mIn2.on()
         mEn1.value = lspeed
 
-# Function fopr controlling right motor
+# Function for controlling right motor
 def rightmotor(rspeed):
     if rspeed < 0 :
         mIn3.on()
